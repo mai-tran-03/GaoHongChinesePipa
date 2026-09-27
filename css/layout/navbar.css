@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(60, 3, 3, 0.05);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.logo img {
+    height: 54px;
+    width: auto;
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: #00adb5;
+}
+
+.menu-checkbox,
+.hamburger-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #777777;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: calc(100vh - 100%);
+        background-color: #fcfcfc0a;
+        flex-direction: column;
+        gap: 0;
+
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease-in-out;
+        z-index: 99;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 1.2rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu-checkbox:checked~.nav-menu {
+        right: 0;
+    }
+
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,16 @@
+a {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+.text-black {
+    color: #000000 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-blue {
+    color: #00adb5 !important;
+}

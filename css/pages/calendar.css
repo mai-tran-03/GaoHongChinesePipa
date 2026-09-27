@@ -1,0 +1,258 @@
+.calendar-archive-section {
+    background-color: #f6f8fa;
+    padding: 4rem 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333333;
+}
+
+.calendar-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.calendar-main-title {
+    font-size: 2.25rem;
+    text-align: center;
+    color: #111111;
+    margin: 0 0 0.25rem 0;
+    font-weight: 800;
+}
+
+.calendar-subtitle {
+    text-align: center;
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 3.5rem;
+}
+
+.month-group {
+    margin-bottom: 3rem;
+}
+
+.month-header {
+    font-size: 1.3rem;
+    color: #111111;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.calendar-card {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-date-badge {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card-date-badge .day {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.card-date-badge .month {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+}
+
+.card-details {
+    padding: 1.25rem 1.5rem;
+    flex-grow: 1;
+}
+
+.event-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-tag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.concert-tag {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+}
+
+.lecture-tag {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+.premiere-tag {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.virtual-tag {
+    background-color: #f3e5f5;
+    color: #4a148c;
+}
+
+.collab-tag {
+    background-color: #f1f8e9;
+    color: #33691e;
+}
+
+.award-tag {
+    background-color: #fffde7;
+    color: #f57f17;
+}
+
+.international-tag {
+    background-color: #efebe9;
+    color: #4e342e;
+}
+
+.flagship-tag {
+    background-color: #eceff1;
+    color: #263238;
+}
+
+.event-time {
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 500;
+}
+
+.event-name {
+    font-size: 1.15rem;
+    color: #111111;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.event-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444444;
+    margin: 0 0 0.75rem 0;
+}
+
+.event-location {
+    display: block;
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 500;
+}
+
+.composition-highlight {
+    border-left: 4px solid #e65100;
+}
+
+.virtual-highlight .card-date-badge {
+    background-color: #4a148c;
+}
+
+.awards-highlight {
+    border-left: 4px solid #f57f17;
+}
+
+.international-highlight .card-date-badge {
+    background-color: #4e342e;
+}
+
+.carnegie-highlight {
+    border: 2px solid #00adb5;
+}
+
+.carnegie-highlight .card-date-badge {
+    background-color: #00adb5;
+}
+
+.tour-stops-container {
+    margin-top: 1.25rem;
+    border-top: 1px dashed #dddddd;
+    padding-top: 1rem;
+}
+
+.tour-stops-heading {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tour-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tour-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #444444;
+}
+
+.tour-list li:last-child {
+    margin-bottom: 0;
+}
+
+.tour-list strong {
+    color: #00adb5;
+}
+
+.tour-list-meta {
+    color: #777777;
+}
+
+@media (max-width: 768px) {
+    .calendar-card {
+        flex-direction: column;
+    }
+
+    .card-date-badge {
+        width: 100%;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .card-date-badge .month {
+        margin-top: 0;
+    }
+
+    .event-meta {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}

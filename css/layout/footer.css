@@ -1,0 +1,17 @@
+.footer-bar {
+    background-color: #4e0808da;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    font-family: sans-serif;
+    border-top: 4px solid #5d0303;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
