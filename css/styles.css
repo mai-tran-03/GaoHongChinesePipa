@@ -14,5 +14,4 @@
 @import url('components/buttons.css');
 
 /* Page-Specific Layouts */
-@import url('pages/biography.css');
 @import url('pages/calendar.css');
