@@ -1,7 +1,14 @@
-.calendar-archive-section {
-    background-color: #f6f8fa;
+.calendar-upcoming-section {
+    background-color: #f4ebeb88;
     padding: 4rem 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: sans-serif;
+    color: #333333;
+}
+
+.calendar-archive-section {
+    background-color: #ebe3e388;
+    padding: 4rem 1.5rem;
+    font-family: sans-serif;
     color: #333333;
 }
 
